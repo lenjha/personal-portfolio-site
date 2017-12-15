@@ -91,7 +91,7 @@ p {
   background: #333333;
   width: 100vw;
   height: 100vh;
-  animation: slideIn 1s linear; }
+  animation: slideIn 2s linear; }
 
 .hero-caption {
   color: white;
@@ -159,8 +159,28 @@ p {
   0% {
     opacity: 0;
     transform: translateY(-100vh); }
-  100% {
+  30% {
     opacity: 1;
+    transform: translateY(0); }
+  32% {
+    transform: translateY(0); }
+  45% {
+    transform: translateY(-10vh); }
+  47% {
+    transform: translateY(-10vh); }
+  60% {
+    transform: translateY(0); }
+  61% {
+    transform: translateY(0); }
+  70% {
+    transform: translateY(-6vh); }
+  72% {
+    transform: translateY(-6vh); }
+  80% {
+    transform: translateY(0); }
+  90% {
+    transform: translateY(-2vh); }
+  100% {
     transform: translateY(0); } }
 
 /*# sourceMappingURL=styles.css.map */

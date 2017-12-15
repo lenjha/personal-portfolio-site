@@ -12,3 +12,11 @@ IDEAS
 Items/icons for different project types?
 Clearly-described services
 Contact is easy to find
+
+
+
+
+
+TO-FIX
+Scroll to location!
+... It keeps overshooting location - fix that.

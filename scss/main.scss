@@ -10,30 +10,100 @@ body {
   padding: 0;
   background: $bg-color;
   font-family: cute;
+  letter-spacing: 1px;
+  color: white;
 }
 
 a {
   text-decoration: none;
+  color: red;
+  &:hover {
+    color: blue;
+  }
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.5rem;
 }
 
 .hero-img {
-  background: #8e9e66;
+  @include flex-centering-justify;
+  background: $dark-gray;
   width: 100vw;
   height: 100vh;
 }
 
+.hero-caption {
+  color: white;
+  font-size: 5rem;
+  text-align: center;
+
+  @media #{$mobile} {
+    font-size: 10rem;
+  }
+}
+
 .about {
-  display: flex;
-  margin: $separation-margins auto 0;
-  align-items: center;
-  justify-content: center;
+  @include flex-centering-justify;
+  flex-direction: column;
+  padding: $section-padding;
+  background: $dark-gray;
+  margin: $separation-margins;
   width: 80vw;
-  height: 500px;
-  background: red;
+  height: auto;
 }
 
 .services {
-  margin: $separation-margins auto 0;
+  background: $light-gray;
+  margin: $separation-margins;
   width: 90vw;
-  background: lightpink;
+  padding: $section-padding;
+  height: 35vh;
+  box-sizing: border-box;
+  @include flex-centering-justify;
+
+  @media #{$mobile} {
+    display: block;
+    height: auto;
+  }
+
+  .services-item {
+    background: $dark-gray;
+    width: 29%;
+    height: auto;
+    margin: 5px;
+    padding: $section-padding;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    @media #{$mobile} {
+      width: 90%;
+      margin: auto;
+    }
+
+    .service-item-img {
+      background: $light-gray;
+      width: $item-img-size;
+      height: $item-img-size;
+      margin: 30px;
+    }
+  }
+}
+
+.contact {
+  @include flex-centering-justify;
+  background: $dark-gray;
+  margin: $separation-margins;
+  width: 80vw;
+  padding: $section-padding;
 }

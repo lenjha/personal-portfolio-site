@@ -1,10 +1,15 @@
 $mobile:"(max-width: 600px)";
 $desktop:"(min-width: 1400px)";
 
-$bg-color: #c9d4e5;
+$bg-color: #aaaaaa;
+$dark-gray: #333333;
+$light-gray: #eeeeee;
 
 $gallery-item-mobile: 100vw;
 $gallery-item-size: 25vw;
 $gallery-item-maxsize: 400px;
 
-$separation-margins: 25px;
+$separation-margins: 25px auto 0;
+$section-padding: 25px;
+
+$item-img-size: 70px;

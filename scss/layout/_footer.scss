@@ -1,5 +1,13 @@
 footer {
-  margin-top: 10px;
-  height: 200px;
+  margin-top: 80px;
+  height: 150px;
   background: #3c443f;
+  padding: $section-padding;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  p {
+    font-size: 1rem;
+  }
 }

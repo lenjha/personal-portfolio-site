@@ -1,6 +1,6 @@
 nav {
   @include flex-and-centering;
-  background: #8c9aaf;
+  background: $light-gray;
   font-family: press;
   width: 100%;
   height: 50px;
@@ -11,7 +11,7 @@ nav {
   z-index: 1;
 
   a {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bolder;
   }
 }

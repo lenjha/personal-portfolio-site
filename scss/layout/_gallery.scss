@@ -1,28 +1,27 @@
 .gallery {
-  @include flex-and-centering;
+  @include flex-centering-justify;
   flex-wrap: wrap;
-  justify-content: center;
   margin-top: $separation-margins;
 }
 
 .gallery-text {
-  background: yellow;
+  background: $dark-gray;
   align-self: center;
   width: 100%;
-  padding: 25px;
-  margin-bottom: $separation-margins;
+  padding: $section-padding;
+  margin: $separation-margins;
 }
 
 .gallery-item {
   width: $gallery-item-size;
   height: $gallery-item-size;
-  background: #a9ceb5;
+  background: $light-gray;
   margin: 5px;
 
   @media #{$mobile} {
     width: $gallery-item-mobile;
     height: $gallery-item-mobile;
-    margin: $separation-margins 0;
+    margin: $separation-margins;
   }
 
   @media #{$desktop} {

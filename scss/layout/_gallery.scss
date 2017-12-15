@@ -1,8 +1,16 @@
 .gallery {
-  display: flex;
+  @include flex-and-centering;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 5px;
+  margin-top: $separation-margins;
+}
+
+.gallery-text {
+  background: yellow;
+  align-self: center;
+  width: 100%;
+  padding: 25px;
+  margin-bottom: $separation-margins;
 }
 
 .gallery-item {
@@ -12,14 +20,12 @@
   margin: 5px;
 
   @media #{$mobile} {
-    background: yellow;
     width: $gallery-item-mobile;
     height: $gallery-item-mobile;
-    margin: 5px 0;
+    margin: $separation-margins 0;
   }
 
   @media #{$desktop} {
-    background: black;
     max-width: $gallery-item-maxsize;
     max-height: $gallery-item-maxsize;
   }

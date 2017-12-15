@@ -1,6 +1,9 @@
 @font-face {
   font-family: cute;
   src: url(../fonts/CuteHandWriting.ttf); }
+@font-face {
+  font-family: press;
+  src: url(../fonts/press.ttf); }
 footer {
   margin-top: 10px;
   height: 200px;
@@ -8,9 +11,17 @@ footer {
 
 .gallery {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 5px; }
+  margin-top: 25px; }
+
+.gallery-text {
+  background: yellow;
+  align-self: center;
+  width: 100%;
+  padding: 25px;
+  margin-bottom: 25px; }
 
 .gallery-item {
   width: 25vw;
@@ -19,28 +30,27 @@ footer {
   margin: 5px; }
   @media (max-width: 600px) {
     .gallery-item {
-      background: yellow;
       width: 100vw;
       height: 100vw;
-      margin: 5px 0; } }
+      margin: 25px 0; } }
   @media (min-width: 1400px) {
     .gallery-item {
-      background: black;
       max-width: 400px;
       max-height: 400px; } }
 
 nav {
+  display: flex;
+  align-items: center;
   background: #8c9aaf;
+  font-family: press;
   width: 100%;
   height: 50px;
-  display: flex;
   flex-direction: row;
   justify-content: space-around;
   position: sticky;
   top: 0;
   z-index: 1; }
   nav a {
-    align-self: center;
     font-size: 3rem;
     font-weight: bolder; }
 
@@ -58,5 +68,19 @@ a {
   background: #8e9e66;
   width: 100vw;
   height: 100vh; }
+
+.about {
+  display: flex;
+  margin: 25px auto 0;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  height: 500px;
+  background: red; }
+
+.services {
+  margin: 25px auto 0;
+  width: 90vw;
+  background: lightpink; }
 
 /*# sourceMappingURL=styles.css.map */

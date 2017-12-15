@@ -16,9 +16,24 @@ a {
   text-decoration: none;
 }
 
-
 .hero-img {
   background: #8e9e66;
   width: 100vw;
   height: 100vh;
+}
+
+.about {
+  display: flex;
+  margin: $separation-margins auto 0;
+  align-items: center;
+  justify-content: center;
+  width: 80vw;
+  height: 500px;
+  background: red;
+}
+
+.services {
+  margin: $separation-margins auto 0;
+  width: 90vw;
+  background: lightpink;
 }

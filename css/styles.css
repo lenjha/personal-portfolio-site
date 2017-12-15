@@ -64,7 +64,7 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background: #aaaaaa;
+  background-image: url("../img/organic-tiles.png");
   font-family: cute;
   letter-spacing: 1px;
   color: white; }
@@ -90,7 +90,8 @@ p {
   justify-content: center;
   background: #333333;
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  animation: slideIn 1s linear; }
 
 .hero-caption {
   color: white;
@@ -153,5 +154,13 @@ p {
   margin: 25px auto 0;
   width: 80vw;
   padding: 25px; }
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100vh); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,26 @@
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.gallery-item {
+  width: $gallery-item-size;
+  height: $gallery-item-size;
+  background: #a9ceb5;
+  margin: 5px;
+
+  @media #{$mobile} {
+    background: yellow;
+    width: $gallery-item-mobile;
+    height: $gallery-item-mobile;
+    margin: 5px 0;
+  }
+
+  @media #{$desktop} {
+    background: black;
+    max-width: $gallery-item-maxsize;
+    max-height: $gallery-item-maxsize;
+  }
+}

@@ -6,13 +6,6 @@ groundwork for a personal portfolio website
 CONSIDER: wireframing, HTML templating, spec-writing, project plan description into the README
 
 
-OBJECTIVES
-Flexbox - at least 3 major elements/structures (e.g. navbar, page layout, projects gallery)
-SASS is used
-Responsive - at least one other screen size
-At least one use of transition, transform, or animation
-
-
 
 
 IDEAS

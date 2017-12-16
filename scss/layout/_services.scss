@@ -1,9 +1,10 @@
 .services {
   background: $light-gray;
   margin: $separation-margins;
-  width: 90vw;
+  // margin-bottom: 20px;
+  width: 100vw;
   padding: $section-padding;
-  height: 35vh;
+  height: auto;
   box-sizing: border-box;
   overflow: hidden;
   @include flex-centering-justify;
@@ -14,15 +15,22 @@
   }
 
   .services-item {
-    background: $dark-gray;
+    // background: $dark-gray;
+    color: $dark-gray;
     width: 29%;
     height: auto;
-    margin: 5px;
+    margin: 1%;
     display: flex;
     flex: 1;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     box-sizing: border-box;
+    max-width: 400px;
+
+    li:last-child {
+      margin-bottom: 25px;
+    }
 
     @media #{$mobile} {
       width: 90%;
@@ -33,7 +41,12 @@
       background: $light-gray;
       width: $item-img-size;
       height: $item-img-size;
-      margin: 30px auto 45px;
+      margin: 30px auto;
+    }
+
+    .service-label {
+      margin-bottom: 5px;
+      font-size: 1.5rem;
     }
   }
 }

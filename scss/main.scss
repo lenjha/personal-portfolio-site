@@ -22,6 +22,11 @@ a {
   }
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+
 li {
   list-style: none;
 }
@@ -31,7 +36,14 @@ h1 {
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+}
+
+img {
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 .hero-img {
@@ -64,8 +76,12 @@ p {
 
 .contact {
   @include flex-centering-justify;
+  flex-direction: column;
   background: $dark-gray;
   margin: $separation-margins;
   width: 80vw;
   padding: $section-padding;
+  p {
+    font-size: 1.2rem;
+  }
 }

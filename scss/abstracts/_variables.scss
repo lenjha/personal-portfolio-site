@@ -1,15 +1,28 @@
-$mobile:"(max-width: 600px)";
+// MEDIA QUERIES
+$mobile:"(max-width: 700px)";
 $desktop:"(min-width: 1400px)";
 
+
+
+// COLORS
 $bg-color: #aaaaaa;
 $dark-gray: #333333;
-$light-gray: #eeeeee;
+$light-gray: #cccccc;
+$link-color: darkred;
+$link-hover-color: blue;
 
+
+
+
+// IMAGE SIZES
 $gallery-item-mobile: 100vw;
 $gallery-item-size: 25vw;
 $gallery-item-maxsize: 400px;
 
+$item-img-size: 150px;
+
+
+
+// MARGIN AND PADDING
 $separation-margins: 25px auto 0;
 $section-padding: 25px;
-
-$item-img-size: 70px;

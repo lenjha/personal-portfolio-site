@@ -1,3 +1,26 @@
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100vh); }
+  15% {
+    opacity: 1;
+    transform: translateY(0); }
+  30% {
+    transform: translateY(-40vh); }
+  45% {
+    transform: translateY(0); }
+  55% {
+    transform: translateY(-20vh); }
+  67% {
+    transform: translateY(0vh); }
+  73% {
+    transform: translateY(-10vh); }
+  85% {
+    transform: translateY(0); }
+  93% {
+    transform: translateY(-5vh); }
+  100% {
+    transform: translateY(0); } }
 @font-face {
   font-family: cute;
   src: url(../fonts/CuteHandWriting.ttf); }
@@ -20,21 +43,27 @@ footer {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 25px auto 0; }
+  margin: 25px auto 0; }
 
 .gallery-text {
   background: #333333;
   align-self: center;
   width: 100%;
   padding: 25px;
-  margin: 25px auto 0; }
+  margin: 25px auto 0;
+  margin-bottom: 25px; }
 
 .gallery-item {
   width: 25vw;
   height: 25vw;
-  background: #eeeeee;
+  background: #cccccc;
   margin: 5px; }
-  @media (max-width: 600px) {
+  .gallery-item img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%; }
+  @media (max-width: 700px) {
     .gallery-item {
       width: 100vw;
       height: 100vw;
@@ -47,7 +76,7 @@ footer {
 nav {
   display: flex;
   align-items: center;
-  background: #eeeeee;
+  background: #cccccc;
   font-family: press;
   width: 100%;
   height: 50px;
@@ -60,6 +89,41 @@ nav {
     font-size: 2rem;
     font-weight: bolder; }
 
+.services {
+  background: #cccccc;
+  margin: 25px auto 0;
+  width: 90vw;
+  padding: 25px;
+  height: 35vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (max-width: 700px) {
+    .services {
+      display: block;
+      height: auto; } }
+  .services .services-item {
+    background: #333333;
+    width: 29%;
+    height: auto;
+    margin: 5px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box; }
+    @media (max-width: 700px) {
+      .services .services-item {
+        width: 90%;
+        margin: auto; } }
+    .services .services-item .service-item-img {
+      background: #cccccc;
+      width: 150px;
+      height: 150px;
+      margin: 30px auto 45px; }
+
 body {
   font-family: sans-serif;
   margin: 0;
@@ -71,7 +135,7 @@ body {
 
 a {
   text-decoration: none;
-  color: red; }
+  color: darkred; }
   a:hover {
     color: blue; }
 
@@ -91,13 +155,13 @@ p {
   background: #333333;
   width: 100vw;
   height: 100vh;
-  animation: slideIn 2s linear; }
+  animation: bounceIn 2.25s linear; }
 
 .hero-caption {
   color: white;
   font-size: 5rem;
   text-align: center; }
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     .hero-caption {
       font-size: 10rem; } }
 
@@ -112,40 +176,6 @@ p {
   width: 80vw;
   height: auto; }
 
-.services {
-  background: #eeeeee;
-  margin: 25px auto 0;
-  width: 90vw;
-  padding: 25px;
-  height: 35vh;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center; }
-  @media (max-width: 600px) {
-    .services {
-      display: block;
-      height: auto; } }
-  .services .services-item {
-    background: #333333;
-    width: 29%;
-    height: auto;
-    margin: 5px;
-    padding: 25px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    box-sizing: border-box; }
-    @media (max-width: 600px) {
-      .services .services-item {
-        width: 90%;
-        margin: auto; } }
-    .services .services-item .service-item-img {
-      background: #eeeeee;
-      width: 70px;
-      height: 70px;
-      margin: 30px; }
-
 .contact {
   display: flex;
   align-items: center;
@@ -154,33 +184,5 @@ p {
   margin: 25px auto 0;
   width: 80vw;
   padding: 25px; }
-
-@keyframes slideIn {
-  0% {
-    opacity: 0;
-    transform: translateY(-100vh); }
-  30% {
-    opacity: 1;
-    transform: translateY(0); }
-  32% {
-    transform: translateY(0); }
-  45% {
-    transform: translateY(-10vh); }
-  47% {
-    transform: translateY(-10vh); }
-  60% {
-    transform: translateY(0); }
-  61% {
-    transform: translateY(0); }
-  70% {
-    transform: translateY(-6vh); }
-  72% {
-    transform: translateY(-6vh); }
-  80% {
-    transform: translateY(0); }
-  90% {
-    transform: translateY(-2vh); }
-  100% {
-    transform: translateY(0); } }
 
 /*# sourceMappingURL=styles.css.map */

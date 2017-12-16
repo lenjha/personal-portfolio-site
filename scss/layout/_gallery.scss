@@ -1,7 +1,7 @@
 .gallery {
   @include flex-centering-justify;
   flex-wrap: wrap;
-  margin-top: $separation-margins;
+  margin: $separation-margins;
 }
 
 .gallery-text {
@@ -10,6 +10,7 @@
   width: 100%;
   padding: $section-padding;
   margin: $separation-margins;
+  margin-bottom: 25px;
 }
 
 .gallery-item {
@@ -17,6 +18,13 @@
   height: $gallery-item-size;
   background: $light-gray;
   margin: 5px;
+
+  img {
+    object-fit: cover;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+  }
 
   @media #{$mobile} {
     width: $gallery-item-mobile;

@@ -1,0 +1,39 @@
+.services {
+  background: $light-gray;
+  margin: $separation-margins;
+  width: 90vw;
+  padding: $section-padding;
+  height: 35vh;
+  box-sizing: border-box;
+  overflow: hidden;
+  @include flex-centering-justify;
+
+  @media #{$mobile} {
+    display: block;
+    height: auto;
+  }
+
+  .services-item {
+    background: $dark-gray;
+    width: 29%;
+    height: auto;
+    margin: 5px;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    @media #{$mobile} {
+      width: 90%;
+      margin: auto;
+    }
+
+    .service-item-img {
+      background: $light-gray;
+      width: $item-img-size;
+      height: $item-img-size;
+      margin: 30px auto 45px;
+    }
+  }
+}

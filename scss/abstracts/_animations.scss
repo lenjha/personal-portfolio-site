@@ -1,0 +1,40 @@
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-100vh);
+  }
+  15% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-40vh);
+  }
+  45% {
+    transform: translateY(0);
+  }
+
+  55% {
+    transform: translateY(-20vh);
+  }
+
+  67% {
+    transform: translateY(0vh);
+  }
+
+  73%{
+    transform: translateY(-10vh);
+  }
+
+  85% {
+    transform: translateY(0);
+  }
+
+  93%{
+    transform: translateY(-5vh);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
